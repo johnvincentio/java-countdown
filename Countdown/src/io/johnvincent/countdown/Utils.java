@@ -1,6 +1,8 @@
 
 package io.johnvincent.countdown;
 
+import java.util.Random;
+
 public class Utils {
 	private Utils() {}
 	public static Answers doCalculate(Numbers numbers) {
@@ -115,4 +117,8 @@ public class Utils {
 	}
 	public static int makeInt (String str) {return Integer.parseInt(str);}
 	public static int makePositive (int num) {if (num < 0) return -num; return num;}
+	public static int getRandom (int from, int to) {
+	    Random random = new Random();
+	    return random.nextInt((to + 1) - from) + from;
+	  }
 }

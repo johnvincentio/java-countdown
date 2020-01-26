@@ -12,6 +12,7 @@ public class Appgui extends JFrame implements ActionListener {
 	private JTextArea m_messagesArea;
 	private JButton m_btnCalculate;
 	private JButton m_btnExit;
+	private JButton m_btnRandom;
 
 	public static void main (String[] args) {(new Appgui()).doApp();}
 	private void doApp() {
@@ -48,10 +49,13 @@ public class Appgui extends JFrame implements ActionListener {
 		midPane.add(new JScrollPane(m_messagesArea));
 
 		JPanel lowPane = new JPanel();
+		m_btnRandom = new JButton("Random");
+		m_btnRandom.addActionListener(this);
 		m_btnCalculate = new JButton("Show Answers");
 		m_btnCalculate.addActionListener(this);
 		m_btnExit = new JButton("Exit");
 		m_btnExit.addActionListener(this);
+		lowPane.add(m_btnRandom);
 		lowPane.add(m_btnCalculate);
 		lowPane.add(m_btnExit);	
 
@@ -71,6 +75,9 @@ public class Appgui extends JFrame implements ActionListener {
 			else if (source == m_btnExit) {
 				doStop();
 			}
+			else if (source == m_btnRandom) {
+				doRandom();
+			}
 		}
 	}
 	private void doCalculate() {
@@ -79,7 +86,7 @@ public class Appgui extends JFrame implements ActionListener {
 		try {
 			for (int i=0; i<Constants.MAX_NUMBERS; i++)
 				numbers.set(Utils.makePositive(Utils.makeInt(m_textNumbers[i].getText())));
-			numbers.setTarget(Utils.makePositive(Utils.makeInt(m_textTarget.getText())));
+				numbers.setTarget(Utils.makePositive(Utils.makeInt(m_textTarget.getText())));
 //			System.out.println("(early) Numbers: "+numbers.show());
 		}
 		catch (Exception ex) {
@@ -98,6 +105,13 @@ public class Appgui extends JFrame implements ActionListener {
 			setMessagesArea(Utils.show (answer));
 		}
 	}
+	private void doRandom() {
+		m_textTarget.setText(Integer.toString(Utils.getRandom (100, 1000)));
+		for (int i=0; i<m_textNumbers.length; i++) {
+			m_textNumbers[i].setText(Integer.toString(Utils.getRandom (1, 100)));
+		}
+	}
+	
 	public void setMessagesArea (final String msg) {
 		SwingUtilities.invokeLater (
 			new Runnable() {
