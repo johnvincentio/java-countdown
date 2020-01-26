@@ -1,5 +1,5 @@
 
-package com.idc.countdown;
+package io.johnvincent.countdown;
 
 public class Numbers {
 	private int[] m_naNumbers = new int[Constants.MAX_NUMBERS];

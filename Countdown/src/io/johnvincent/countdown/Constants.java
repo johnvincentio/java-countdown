@@ -1,5 +1,5 @@
 
-package com.idc.countdown;
+package io.johnvincent.countdown;
 
 public class Constants {
 	public static final int MAX_NUMBERS = 6;

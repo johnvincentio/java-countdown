@@ -1,5 +1,5 @@
 
-package com.idc.countdown;
+package io.johnvincent.countdown;
 
 public class Answer {
 	private int[] m_anAnswer = new int[Constants.MAX_ARRAY];

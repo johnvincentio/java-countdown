@@ -1,5 +1,5 @@
 
-package com.idc.countdown;
+package io.johnvincent.countdown;
 
 public class Utils {
 	private Utils() {}
