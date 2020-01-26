@@ -1,25 +1,21 @@
 
 # Usage
 
-To execute app, use `diffall.command`
+To execute app, use `app.command`
 
-Provide two directories you wish to compare.
+Enter your own values if you wish or click the `Random` button.
 
-Cleaning options are for removing files that are not of interest. Thins out the forest so you can see the trees.
+Click `Show Answers` and all possible solutions will appear in the center content pane.
 
-The compare options perform the actual compare. Delete if identical allows for more cleaning out of files that are not of interest.
+# Countdown
 
-The aim is to end up with a detailed compare log of all differences between the two directories.
+At Github, create repository `java-countdown`
 
-# Diffall
-
-At Github, create repository `java-diffall`
-
-repo: https://github.com/johnvincentio/java-diffall
+repo: https://github.com/johnvincentio/java-countdown
 
 ```
-cd /Users/jv/Desktop/MyDevelopment/github/java/Utilities
-create-repo java-diffall
+cd /Users/jv/Desktop/MyDevelopment/github/java/Games
+create-repo java-countdown
 ```
 
 Remove non-relevant files.
@@ -27,20 +23,20 @@ Remove non-relevant files.
 ## Add `README.md`
 
 ```
-cd java-diffall
+cd java-countdown
 ```
 
 Create `README.md`
 
 ```
-For details, see Diffall/README.md
+For details, see Countdown/README.md
 ```
 
 ## Start Eclipse
 
 in Finder
 
-* select `/Users/jv/Desktop/MyDevelopment/github/java/Utilities/java-diffall`
+* select `/Users/jv/Desktop/MyDevelopment/github/java/Games/java-countdown`
 * Right click, Services
   * eclipse-jee
 
@@ -51,12 +47,12 @@ in Finder
 
 Settings
 
-* Project Name: Diffall
+* Project Name: Countdown
 * Use default location
 * JRE; Use an execution environment JRE: JavaSE-1.8
 * Create separate folders for sources and class files
 
-* Default output folder: `Diffall/classes`
+* Default output folder: `Countdown/classes`
 
 ## Package
 
@@ -69,16 +65,16 @@ Copy code to this package and change package names.
 
 ## Script file
 
-`/Users/jv/Desktop/MyDevelopment/github/java/Utilities/java-diffall/Diffall/diffall.command`
+`/Users/jv/Desktop/MyDevelopment/github/java/Utilities/java-diffall/Countdown/app.command`
 
 
 ## Create Alias
 
 In Finder
 
-* select `diffall.command`
+* select `app.command`
 * right click, Make Alias
 * move alias to `/Users/jv/Desktop/MyDevelopment/github/repo_shell_scripts/mac/JVTools/`
-* rename to `diffall.command`
+* rename to `countdown.command`
 
 # END
