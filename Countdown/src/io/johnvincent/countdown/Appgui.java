@@ -48,7 +48,7 @@ public class Appgui extends JFrame implements ActionListener {
 		midPane.add(new JScrollPane(m_messagesArea));
 
 		JPanel lowPane = new JPanel();
-		m_btnCalculate = new JButton("Start");
+		m_btnCalculate = new JButton("Show Answers");
 		m_btnCalculate.addActionListener(this);
 		m_btnExit = new JButton("Exit");
 		m_btnExit.addActionListener(this);
