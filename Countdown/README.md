@@ -74,7 +74,7 @@ In Finder
 
 * select `app.command`
 * right click, Make Alias
-* move alias to `/Users/jv/Desktop/MyDevelopment/github/repo_shell_scripts/mac/JVTools/`
+* move alias to `/Users/jv/Desktop/MyDevelopment/github/repo_shell_scripts/mac/unix-scripts/bin/`
 * rename to `countdown.command`
 
 # END
