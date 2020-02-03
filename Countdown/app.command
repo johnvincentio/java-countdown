@@ -8,6 +8,6 @@ DEV_HOME=/Users/jv/Desktop/MyDevelopment/github/java/Games/java-countdown/Countd
 #
 MYCP=$DEV_HOME
 #
-java -cp $MYCP io.johnvincent.countdown.Appgui
+java -cp $MYCP -Xdock:name="Countdown" io.johnvincent.countdown.Appgui
 #
 echo "end"

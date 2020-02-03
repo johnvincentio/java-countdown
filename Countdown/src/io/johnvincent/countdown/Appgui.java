@@ -22,6 +22,7 @@ public class Appgui extends JFrame implements ActionListener {
 				doStop();
 			}
 		});
+		setTitle("Countdown");
 		setSize(700,900);
 		pack();
 		setVisible(true);			
