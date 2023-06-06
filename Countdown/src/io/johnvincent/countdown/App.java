@@ -16,7 +16,7 @@ public class App {
 		Answers all = Utils.doCalculate (numbers);
 		System.out.println("Numbers: "+numbers.show());
 		Answer answer;
-		Iterator iter = all.getAnswers();
+		Iterator<Answer> iter = all.getAnswers();
 		while (iter.hasNext()) {
 			answer = (Answer) iter.next();
 			System.out.println("Closest is: "+Utils.show (answer));

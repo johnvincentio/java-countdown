@@ -100,7 +100,7 @@ public class Appgui extends JFrame implements ActionListener {
 		setMessagesArea("Numbers: "+numbers.show());
 		setMessagesArea("Solutions: "+all.getSize());
 		Answer answer;
-		Iterator iter = all.getAnswers();
+		Iterator<Answer> iter = all.getAnswers();
 		while (iter.hasNext()) {
 			answer = (Answer) iter.next();
 			setMessagesArea(Utils.show (answer));
