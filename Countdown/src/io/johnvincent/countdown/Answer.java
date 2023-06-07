@@ -16,11 +16,12 @@ public class Answer {
 	public String show() {
 		StringBuffer buf = new StringBuffer();
 		buf.append("("+m_nTotal+"); ");
-		buf.append("((((("); buf.append(m_anAnswer[0]).append(Utils.getOperator(m_anAnswer[1])).append(m_anAnswer[2]).append(")");
-		buf.append(Utils.getOperator(m_anAnswer[3])).append(m_anAnswer[4]).append(")");
-		buf.append(Utils.getOperator(m_anAnswer[5])).append(m_anAnswer[6]).append(")");
-		buf.append(Utils.getOperator(m_anAnswer[7])).append(m_anAnswer[8]).append(")");
-		buf.append(Utils.getOperator(m_anAnswer[9])).append(m_anAnswer[10]).append(")");
+		buf.append("(((((");
+		buf.append(m_anAnswer[0]).append(Utils.appendOperator(m_anAnswer[1])).append(m_anAnswer[2]).append(")");
+		buf.append(Utils.appendOperator(m_anAnswer[3])).append(m_anAnswer[4]).append(")");
+		buf.append(Utils.appendOperator(m_anAnswer[5])).append(m_anAnswer[6]).append(")");
+		buf.append(Utils.appendOperator(m_anAnswer[7])).append(m_anAnswer[8]).append(")");
+		buf.append(Utils.appendOperator(m_anAnswer[9])).append(m_anAnswer[10]).append(")");
 		return buf.toString();
 	}
 }

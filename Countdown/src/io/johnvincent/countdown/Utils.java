@@ -115,6 +115,9 @@ public class Utils {
 			return "+";
 		}
 	}
+	public static String appendOperator(int num) {
+		return " " + getOperator(num) + " ";
+	}
 	public static int makeInt (String str) {return Integer.parseInt(str);}
 	public static int makePositive (int num) {if (num < 0) return -num; return num;}
 	public static int getRandom (int from, int to) {
